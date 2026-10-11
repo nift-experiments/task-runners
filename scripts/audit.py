@@ -57,6 +57,11 @@ def audit(directory):
    assert row['proof']['native_cache_hits']==len(selected)-len(expected)
   if not row['warmup']:
    key=(row['tiny'],row['size'],row['jobs'],row['case'],row['runner']);groups.setdefault(key,[]).append(row)
+ declared=json.loads((directory/'plan.json').read_text())
+ expected_groups={(c['tiny'],c['size'],c['jobs'],c['case'],r):c['samples'] for c in declared for r in ['nift','turbo','nx']}
+ assert set(groups)==set(expected_groups), 'incomplete matrix'
+ assert all(len(groups[k])==n for k,n in expected_groups.items()), 'sample count mismatch'
+ assert sum(r['warmup'] for r in rows)==len(expected_groups), 'warmup count mismatch'
  summary=[]
  def percentile(x,q):
   x=sorted(x);i=(len(x)-1)*q;lo=int(i);hi=min(lo+1,len(x)-1);return x[lo]+(x[hi]-x[lo])*(i-lo)
