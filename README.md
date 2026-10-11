@@ -1,6 +1,6 @@
 # Task runners
 
-A correctness-gated Nift Labs experiment comparing Nift, Turborepo and Nx as project task orchestrators. This repository contains the protocol and implementation; accepted raw evidence will live in `nift-experiments/lab-evidence`. No results exist yet.
+A correctness-gated Nift Labs experiment comparing Nift, Turborepo and Nx as project task orchestrators. This repository contains the protocol and implementation; accepted raw evidence will live in `nift-experiments/lab-evidence`. Local semantic and scaling probes are complete; no official results are published yet.
 
 The question is dependency orchestration, invalidation, concurrency, targeting and failure recovery, not merely process-launch latency. Identical deterministic task bodies and an independent graph/output oracle are required. Cache-disabled execution, unchanged-input skipping and cache restoration are distinct cohorts.
 

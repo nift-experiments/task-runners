@@ -1,0 +1,26 @@
+[
+  {
+    "script": "lint.f",
+    "exit_code": 0,
+    "prepared_prerequisites": true,
+    "incremental_or_parallel_claim": false
+  },
+  {
+    "script": "test.f",
+    "exit_code": 0,
+    "prepared_prerequisites": true,
+    "incremental_or_parallel_claim": false
+  },
+  {
+    "script": "package.f",
+    "exit_code": 0,
+    "prepared_prerequisites": true,
+    "incremental_or_parallel_claim": false
+  },
+  {
+    "script": "release.f",
+    "exit_code": 0,
+    "prepared_prerequisites": true,
+    "incremental_or_parallel_claim": false
+  }
+]

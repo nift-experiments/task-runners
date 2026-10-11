@@ -1,0 +1,10 @@
+{
+  "nift_source_sha": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+  "source_tree_sha": "95804aded5e145d9fc608bff96abb371d8fdcbec",
+  "public_source_url": "https://github.com/nift-dev/nift/tree/8f90fd49d8b2484c1d732cb440ea442e53e08172",
+  "public_revision_verified": true,
+  "source_archive_sha256": "f40e5650140494c1a26bb0a6fe87629ee1ab653d61b33439480693fda919e3ec",
+  "build": "Clean git archive of the exact public source; ordinary make -j4; no core changes. Binary hash and compiler recorded separately for each machine.",
+  "local_binary_sha256": "c92a1b0384c35ad0232fc39c6414cb79616f079938aec6ed0120a9ab469e064d",
+  "version": "Nift v4.11.0"
+}
