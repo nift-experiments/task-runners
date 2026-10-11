@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "files_scanned": 14,
+  "files_scanned": 17,
   "checks": [
     "authorized token bytes absent",
     "private SSH key markers absent",

@@ -1,0 +1,11 @@
+{
+  "measured_suite": "56384cace6821a1541e7773cf1d8ce7a4c688ed8",
+  "nift_source": "8f90fd49d8b2484c1d732cb440ea442e53e08172",
+  "experiment_results": "c72983dc02ad018799cf9884f8f144b7b73d49ec",
+  "accepted_evidence": "7f22a785d2cc39b5ebe30a8d5ad5bae020aab7a9",
+  "labs_source": "df481775ce2f3e28962581ef75dff67acf21126f",
+  "labs_publication": "1601e933ce82ba1522b52e8d6da760fe10c4f9e1",
+  "live_url": "https://lab.nift.dev/benchmarks/task-runners/",
+  "publication_order": "experiment \u2192 evidence \u2192 Labs source stage \u2192 Labs public main \u2192 live certification \u2192 teardown",
+  "all_gates_passed": true
+}
