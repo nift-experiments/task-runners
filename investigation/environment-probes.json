@@ -1,0 +1,117 @@
+[
+  {
+    "runner": "nift",
+    "value": "A",
+    "starts": [
+      "lint",
+      "build-helper",
+      "generate-schema",
+      "asset-00000",
+      "asset-00002",
+      "asset-00004",
+      "asset-00006",
+      "generate-client",
+      "asset-00005",
+      "asset-00003",
+      "asset-00001",
+      "asset-00007",
+      "typecheck",
+      "unit-test",
+      "docs",
+      "build-web",
+      "package",
+      "integration-test",
+      "verify",
+      "release-prep"
+    ],
+    "output_matches_environment": true,
+    "declared_env_input": false,
+    "exit_code": 0
+  },
+  {
+    "runner": "nift",
+    "value": "B",
+    "starts": [],
+    "output_matches_environment": false,
+    "declared_env_input": false,
+    "exit_code": 0
+  },
+  {
+    "runner": "turbo",
+    "value": "A",
+    "starts": [
+      "lint",
+      "asset-00000",
+      "asset-00002",
+      "asset-00006",
+      "asset-00004",
+      "generate-schema",
+      "build-helper",
+      "asset-00001",
+      "asset-00003",
+      "asset-00005",
+      "asset-00007",
+      "generate-client",
+      "typecheck",
+      "unit-test",
+      "docs",
+      "build-web",
+      "package",
+      "integration-test",
+      "verify",
+      "release-prep"
+    ],
+    "output_matches_environment": true,
+    "declared_env_input": true,
+    "exit_code": 0
+  },
+  {
+    "runner": "turbo",
+    "value": "B",
+    "starts": [
+      "asset-00000"
+    ],
+    "output_matches_environment": true,
+    "declared_env_input": true,
+    "exit_code": 0
+  },
+  {
+    "runner": "nx",
+    "value": "A",
+    "starts": [
+      "generate-schema",
+      "lint",
+      "build-helper",
+      "asset-00000",
+      "generate-client",
+      "asset-00004",
+      "asset-00002",
+      "asset-00006",
+      "typecheck",
+      "unit-test",
+      "docs",
+      "asset-00001",
+      "asset-00003",
+      "build-web",
+      "asset-00005",
+      "asset-00007",
+      "package",
+      "integration-test",
+      "verify",
+      "release-prep"
+    ],
+    "output_matches_environment": true,
+    "declared_env_input": true,
+    "exit_code": 0
+  },
+  {
+    "runner": "nx",
+    "value": "B",
+    "starts": [
+      "asset-00000"
+    ],
+    "output_matches_environment": true,
+    "declared_env_input": true,
+    "exit_code": 0
+  }
+]

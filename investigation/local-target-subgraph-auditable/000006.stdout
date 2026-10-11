@@ -1,0 +1,77 @@
+
+ NX   Running target release-prep for project workflow and 11 tasks it depends on:
+
+- workflow
+
+
+
+> nx run workflow:build-helper  [local cache]
+
+> python3 task_body.py build-helper
+
+
+> nx run workflow:lint  [local cache]
+
+> python3 task_body.py lint
+
+
+> nx run workflow:generate-schema
+
+> python3 task_body.py generate-schema
+
+
+> nx run workflow:generate-client
+
+> python3 task_body.py generate-client
+
+
+> nx run workflow:unit-test
+
+> python3 task_body.py unit-test
+
+
+> nx run workflow:typecheck
+
+> python3 task_body.py typecheck
+
+
+> nx run workflow:docs
+
+> python3 task_body.py docs
+
+
+> nx run workflow:build-web
+
+> python3 task_body.py build-web
+
+
+> nx run workflow:package
+
+> python3 task_body.py package
+
+
+> nx run workflow:integration-test
+
+> python3 task_body.py integration-test
+
+
+> nx run workflow:verify
+
+> python3 task_body.py verify
+
+
+> nx run workflow:release-prep
+
+> python3 task_body.py release-prep
+
+
+
+
+ NX   Successfully ran target release-prep for project workflow and 11 tasks it depends on
+
+Nx read the output from the cache instead of running the command for 2 out of 12 tasks.
+
+  Run duration:      488ms
+  Cache:             2/12 hit (17%)
+  Critical path:     425ms (8 tasks)
+  Recoverable time:  <1ms

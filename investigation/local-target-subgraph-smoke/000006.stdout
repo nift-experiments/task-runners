@@ -1,0 +1,13 @@
+rebuild causes:
+  ↳ dependency changed: inputs/generate-schema.json → 1 file
+  ↳ dependency changed: out/build-web.json → 1 file
+  ↳ dependency changed: out/docs.json → 1 file
+  ↳ dependency changed: out/generate-client.json → 3 files
+  ↳ dependency changed: out/generate-schema.json → 1 file
+  ↳ dependency changed: out/integration-test.json → 1 file
+  ↳ dependency changed: out/package.json → 1 file
+  ↳ dependency changed: out/typecheck.json → 1 file
+  ↳ dependency changed: out/unit-test.json → 1 file
+affected files: release-prep, verify, integration-test, package, build-web  +5 more
+10 target/prerequisite items built; 2 prerequisites up to date; build succeeded
+time taken: 0.4164 seconds

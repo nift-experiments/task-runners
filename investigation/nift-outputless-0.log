@@ -1,0 +1,25 @@
+rebuild causes:
+  ↳ generated output is missing → 12 files
+  ↳ page build metadata is missing → 12 files
+affected files: generate-schema, generate-client, build-helper, docs, asset-00000  +7 more
+12 of 20 files built successfully
+time taken: 0.264889 seconds
+error: while building lint
+  out/lint.json
+  custom build did not produce the tracked output file
+error: while building typecheck
+  out/typecheck.json
+  custom build did not produce the tracked output file
+error: while building unit-test
+  out/unit-test.json
+  custom build did not produce the tracked output file
+error: while building build-web
+  blocked because prerequisite 'unit-test' failed
+error: while building package
+  blocked because prerequisite 'build-web' failed
+error: while building integration-test
+  blocked because prerequisite 'package' failed
+error: while building verify
+  blocked because prerequisite 'integration-test' failed
+error: while building release-prep
+  blocked because prerequisite 'verify' failed

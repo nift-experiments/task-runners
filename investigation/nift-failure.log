@@ -1,0 +1,34 @@
+6 of 20 files built successfully
+time taken: 0.135312 seconds
+error: while building generate-schema
+  tasks/action.f:2:39
+  Task failed: generate-schema: injected prerequisite failure
+
+    if(!r.launched || r.exit_code != 0) { throw error("Task failed: " + r.stderr, "user.task.failed") }
+                                          ^
+error: while building generate-client
+  blocked because prerequisite 'generate-schema' failed
+error: while building typecheck
+  blocked because prerequisite 'generate-client' failed
+error: while building unit-test
+  blocked because prerequisite 'generate-client' failed
+error: while building build-web
+  blocked because prerequisite 'unit-test' failed
+error: while building docs
+  blocked because prerequisite 'generate-client' failed
+error: while building package
+  blocked because prerequisite 'build-web' failed
+error: while building integration-test
+  blocked because prerequisite 'package' failed
+error: while building verify
+  blocked because prerequisite 'integration-test' failed
+error: while building release-prep
+  blocked because prerequisite 'verify' failed
+error: while building asset-00001
+  blocked because prerequisite 'generate-schema' failed
+error: while building asset-00003
+  blocked because prerequisite 'generate-schema' failed
+error: while building asset-00005
+  blocked because prerequisite 'generate-schema' failed
+error: while building asset-00007
+  blocked because prerequisite 'generate-schema' failed

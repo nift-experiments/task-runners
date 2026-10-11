@@ -1,0 +1,117 @@
+
+ NX   Running targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow:
+
+- workflow
+
+
+
+> nx run workflow:generate-schema  [local cache]
+
+> python3 task_body.py generate-schema
+
+
+> nx run workflow:build-helper  [local cache]
+
+> python3 task_body.py build-helper
+
+
+> nx run workflow:asset-00000  [local cache]
+
+> python3 task_body.py asset-00000
+
+
+> nx run workflow:asset-00006  [local cache]
+
+> python3 task_body.py asset-00006
+
+
+> nx run workflow:asset-00004  [local cache]
+
+> python3 task_body.py asset-00004
+
+
+> nx run workflow:asset-00002  [local cache]
+
+> python3 task_body.py asset-00002
+
+
+> nx run workflow:generate-client  [local cache]
+
+> python3 task_body.py generate-client
+
+
+> nx run workflow:asset-00005  [local cache]
+
+> python3 task_body.py asset-00005
+
+
+> nx run workflow:asset-00003  [local cache]
+
+> python3 task_body.py asset-00003
+
+
+> nx run workflow:asset-00007  [local cache]
+
+> python3 task_body.py asset-00007
+
+
+> nx run workflow:asset-00001  [local cache]
+
+> python3 task_body.py asset-00001
+
+
+> nx run workflow:docs  [local cache]
+
+> python3 task_body.py docs
+
+
+> nx run workflow:lint
+
+> python3 task_body.py lint
+
+
+> nx run workflow:typecheck
+
+> python3 task_body.py typecheck
+
+
+> nx run workflow:unit-test
+
+> python3 task_body.py unit-test
+
+
+> nx run workflow:build-web  [local cache]
+
+> python3 task_body.py build-web
+
+
+> nx run workflow:package  [local cache]
+
+> python3 task_body.py package
+
+
+> nx run workflow:integration-test
+
+> python3 task_body.py integration-test
+
+
+> nx run workflow:verify
+
+> python3 task_body.py verify
+
+
+> nx run workflow:release-prep  [local cache]
+
+> python3 task_body.py release-prep
+
+
+
+
+ NX   Successfully ran targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow
+
+Nx read the output from the cache instead of running the command for 15 out of 20 tasks.
+
+  Run duration:      231ms
+  Cache:             15/20 hit (75%)
+  Critical path:     188ms (8 tasks)
+  Recoverable time:  1ms (0% of the run)

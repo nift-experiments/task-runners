@@ -8,12 +8,12 @@ ENV=dict(os.environ,NX_DAEMON='false',NX_NO_CLOUD='true',TURBO_TELEMETRY_DISABLE
 def command(runner,g,jobs=4,target=None,force=False):
  names=target or [t['id'] for t in g['tasks']]
  if runner=='nift':return [str(ROOT/'work/nift-source/nift'),'build',*(['--all'] if force else names if target else [])]
- if runner=='turbo':return [str(ROOT/'work/tools/node_modules/.bin/turbo'),'run',*names,f'--concurrency={jobs}','--cache=local:w' if force else '--cache=local:rw','--continue=dependencies-successful','--output-logs=errors-only']
+ if runner=='turbo':return [str(ROOT/'work/tools/node_modules/.bin/turbo'),'run',*names,f'--concurrency={jobs}','--cache=local:' if force else '--cache=local:rw','--continue=dependencies-successful','--output-logs=errors-only']
  return [str(ROOT/'work/tools/node_modules/.bin/nx'),'run-many','--projects=workflow','--targets='+','.join(names),f'--parallel={jobs}','--outputStyle=static',*(['--skip-nx-cache'] if force else [])]
 def invoke(r,runner,g,label,expected,jobs=4,target=None,force=False,failed=None):
  (r/'trace.jsonl').unlink(missing_ok=True);start=time.monotonic();args=command(runner,g,jobs,target,force)
  if label=='recovery' and runner=='nift':args=[str(ROOT/'work/nift-source/nift'),'build','--repair']
- p=subprocess.run(args,cwd=r,env=ENV,capture_output=True,text=True,timeout=90);wall=time.monotonic()-start
+ p=subprocess.run(args,cwd=r,env=ENV,capture_output=True,text=True,timeout=1800);wall=time.monotonic()-start
  (r/(label+'.log')).write_text(p.stdout+p.stderr);print(runner,label,p.returncode,round(wall,3),flush=True)
  if p.returncode and not failed:raise RuntimeError((p.stdout+p.stderr)[-3500:])
  assert (p.returncode!=0)==bool(failed)

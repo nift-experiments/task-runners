@@ -1,0 +1,116 @@
+
+ NX   Running targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow:
+
+- workflow
+
+
+
+> nx run workflow:generate-schema
+
+> python3 task_body.py generate-schema
+
+
+> nx run workflow:lint
+
+> python3 task_body.py lint
+
+
+> nx run workflow:asset-00000
+
+> python3 task_body.py asset-00000
+
+
+> nx run workflow:build-helper
+
+> python3 task_body.py build-helper
+
+
+> nx run workflow:generate-client
+
+> python3 task_body.py generate-client
+
+
+> nx run workflow:asset-00002
+
+> python3 task_body.py asset-00002
+
+
+> nx run workflow:asset-00004
+
+> python3 task_body.py asset-00004
+
+
+> nx run workflow:asset-00006
+
+> python3 task_body.py asset-00006
+
+
+> nx run workflow:typecheck
+
+> python3 task_body.py typecheck
+
+
+> nx run workflow:unit-test
+
+> python3 task_body.py unit-test
+
+
+> nx run workflow:docs
+
+> python3 task_body.py docs
+
+
+> nx run workflow:asset-00001
+
+> python3 task_body.py asset-00001
+
+
+> nx run workflow:asset-00003
+
+> python3 task_body.py asset-00003
+
+
+> nx run workflow:build-web
+
+> python3 task_body.py build-web
+
+
+> nx run workflow:asset-00005
+
+> python3 task_body.py asset-00005
+
+
+> nx run workflow:asset-00007
+
+> python3 task_body.py asset-00007
+
+
+> nx run workflow:package
+
+> python3 task_body.py package
+
+
+> nx run workflow:integration-test
+
+> python3 task_body.py integration-test
+
+
+> nx run workflow:verify
+
+> python3 task_body.py verify
+
+
+> nx run workflow:release-prep
+
+> python3 task_body.py release-prep
+
+
+
+
+ NX   Successfully ran targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow
+
+
+  Run duration:      527ms
+  Cache:             0/20 hit (0%)
+  Critical path:     464ms (8 tasks)
+  Recoverable time:  63ms (12% of the run)

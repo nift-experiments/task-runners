@@ -1,0 +1,33 @@
+{
+  "gate": "local feasibility accepted",
+  "initial_semantic_observations": 21,
+  "scaling_observations": 24,
+  "worker_observations": 6,
+  "feature_probes": 9,
+  "environment_probes": 6,
+  "independent_audits": [
+    "local-full-dirty-smoke-fixed",
+    "local-target-subgraph-auditable"
+  ],
+  "excluded": [
+    "native Nift outputless tracked DAG",
+    "native Nift environment invalidation",
+    "remote caching",
+    "10,000-task full execution",
+    "default daemon-assisted developer latency"
+  ],
+  "rejected_pilots": [
+    "90-second Turbo timeout",
+    "relative supervisor metric path",
+    "subset cell mutation seed collision"
+  ],
+  "planned_runner_cells": 93,
+  "planned_observations_including_warmups": 1527,
+  "machine": "one g6-standard-4 / 4 shared vCPU / 8 GiB",
+  "hourly_price_usd": 0.072,
+  "estimated_measurement_minutes": [
+    45,
+    90
+  ],
+  "status": "ready to freeze suite; cloud not provisioned yet"
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "noop",
+    "samples": 50
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "leaf",
+    "samples": 20
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "fanout",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "full",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "shared",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 4,
+    "case": "noop",
+    "samples": 50
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 4,
+    "case": "leaf",
+    "samples": 20
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 4,
+    "case": "fanout",
+    "samples": 5
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 4,
+    "case": "full",
+    "samples": 5
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 4,
+    "case": "shared",
+    "samples": 5
+  },
+  {
+    "tiny": false,
+    "size": 1000,
+    "jobs": 4,
+    "case": "noop",
+    "samples": 50
+  },
+  {
+    "tiny": false,
+    "size": 1000,
+    "jobs": 4,
+    "case": "leaf",
+    "samples": 20
+  },
+  {
+    "tiny": false,
+    "size": 1000,
+    "jobs": 4,
+    "case": "fanout",
+    "samples": 3
+  },
+  {
+    "tiny": false,
+    "size": 1000,
+    "jobs": 4,
+    "case": "full",
+    "samples": 3
+  },
+  {
+    "tiny": false,
+    "size": 1000,
+    "jobs": 4,
+    "case": "shared",
+    "samples": 3
+  },
+  {
+    "tiny": true,
+    "size": 100,
+    "jobs": 4,
+    "case": "noop",
+    "samples": 50
+  },
+  {
+    "tiny": true,
+    "size": 100,
+    "jobs": 4,
+    "case": "leaf",
+    "samples": 20
+  },
+  {
+    "tiny": true,
+    "size": 100,
+    "jobs": 4,
+    "case": "fanout",
+    "samples": 5
+  },
+  {
+    "tiny": true,
+    "size": 100,
+    "jobs": 4,
+    "case": "full",
+    "samples": 5
+  },
+  {
+    "tiny": true,
+    "size": 100,
+    "jobs": 4,
+    "case": "one-percent",
+    "samples": 5
+  },
+  {
+    "tiny": true,
+    "size": 1000,
+    "jobs": 4,
+    "case": "noop",
+    "samples": 50
+  },
+  {
+    "tiny": true,
+    "size": 1000,
+    "jobs": 4,
+    "case": "leaf",
+    "samples": 20
+  },
+  {
+    "tiny": true,
+    "size": 1000,
+    "jobs": 4,
+    "case": "fanout",
+    "samples": 3
+  },
+  {
+    "tiny": true,
+    "size": 1000,
+    "jobs": 4,
+    "case": "full",
+    "samples": 3
+  },
+  {
+    "tiny": true,
+    "size": 1000,
+    "jobs": 4,
+    "case": "one-percent",
+    "samples": 3
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 1,
+    "case": "full",
+    "samples": 5
+  },
+  {
+    "tiny": false,
+    "size": 100,
+    "jobs": 2,
+    "case": "full",
+    "samples": 5
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "uncached-full",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "target-leaf",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "target-subgraph",
+    "samples": 10
+  },
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "multi-target",
+    "samples": 10
+  }
+]

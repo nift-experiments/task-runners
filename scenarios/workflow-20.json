@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "tasks": [
+    {
+      "id": "generate-schema",
+      "prerequisites": [],
+      "kind": "json",
+      "input": "inputs/generate-schema.json",
+      "output": "out/generate-schema.json"
+    },
+    {
+      "id": "generate-client",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/generate-client.json",
+      "output": "out/generate-client.json"
+    },
+    {
+      "id": "lint",
+      "prerequisites": [],
+      "kind": "check",
+      "input": "inputs/lint.json",
+      "output": null
+    },
+    {
+      "id": "typecheck",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "check",
+      "input": "inputs/typecheck.json",
+      "output": null
+    },
+    {
+      "id": "unit-test",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "check",
+      "input": "inputs/unit-test.json",
+      "output": null
+    },
+    {
+      "id": "build-web",
+      "prerequisites": [
+        "typecheck",
+        "lint",
+        "unit-test"
+      ],
+      "kind": "transform",
+      "input": "inputs/build-web.json",
+      "output": "out/build-web.json"
+    },
+    {
+      "id": "build-helper",
+      "prerequisites": [],
+      "kind": "compile",
+      "input": "inputs/build-helper.json",
+      "output": "out/build-helper.json"
+    },
+    {
+      "id": "docs",
+      "prerequisites": [
+        "generate-client"
+      ],
+      "kind": "transform",
+      "input": "inputs/docs.json",
+      "output": "out/docs.json"
+    },
+    {
+      "id": "package",
+      "prerequisites": [
+        "build-web",
+        "build-helper",
+        "docs"
+      ],
+      "kind": "archive",
+      "input": "inputs/package.json",
+      "output": "out/package.json"
+    },
+    {
+      "id": "integration-test",
+      "prerequisites": [
+        "package"
+      ],
+      "kind": "check",
+      "input": "inputs/integration-test.json",
+      "output": null
+    },
+    {
+      "id": "verify",
+      "prerequisites": [
+        "integration-test"
+      ],
+      "kind": "check",
+      "input": "inputs/verify.json",
+      "output": null
+    },
+    {
+      "id": "release-prep",
+      "prerequisites": [
+        "verify"
+      ],
+      "kind": "json",
+      "input": "inputs/release-prep.json",
+      "output": "out/release-prep.json"
+    },
+    {
+      "id": "asset-00000",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00000.json",
+      "output": "out/asset-00000.json"
+    },
+    {
+      "id": "asset-00001",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00001.json",
+      "output": "out/asset-00001.json"
+    },
+    {
+      "id": "asset-00002",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00002.json",
+      "output": "out/asset-00002.json"
+    },
+    {
+      "id": "asset-00003",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00003.json",
+      "output": "out/asset-00003.json"
+    },
+    {
+      "id": "asset-00004",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00004.json",
+      "output": "out/asset-00004.json"
+    },
+    {
+      "id": "asset-00005",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00005.json",
+      "output": "out/asset-00005.json"
+    },
+    {
+      "id": "asset-00006",
+      "prerequisites": [],
+      "kind": "transform",
+      "input": "inputs/asset-00006.json",
+      "output": "out/asset-00006.json"
+    },
+    {
+      "id": "asset-00007",
+      "prerequisites": [
+        "generate-schema"
+      ],
+      "kind": "transform",
+      "input": "inputs/asset-00007.json",
+      "output": "out/asset-00007.json"
+    }
+  ]
+}

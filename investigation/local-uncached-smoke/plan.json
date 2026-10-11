@@ -1,0 +1,9 @@
+[
+  {
+    "tiny": false,
+    "size": 20,
+    "jobs": 4,
+    "case": "uncached-full",
+    "samples": 1
+  }
+]

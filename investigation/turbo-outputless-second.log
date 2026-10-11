@@ -1,0 +1,10 @@
+
+   • turbo 2.11.7
+   • Running generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007
+   • Remote caching disabled
+
+
+ Tasks:    20 successful, 20 total
+Cached:    15 cached, 20 total
+  Time:    1.233s 
+

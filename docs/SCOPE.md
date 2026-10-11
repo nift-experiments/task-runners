@@ -1,0 +1,17 @@
+# Accepted scope decision, before official measurement
+
+Primary quantitative cohort: one synthetic single-project task DAG, with identical deterministic task processes. Realistic task classes include JSON/schema/client generation, checks, text/assets, one actual helper compilation/execution, deterministic in-memory packaging and a release manifest. It is controlled project work, not a production framework build or a monorepo/package-selection test.
+
+Checks in the common quantitative graph deliberately produce cached success receipts in **all** participants. This is not a benchmark of always-run outputless checks. The genuine outputless mixed-DAG feature probe is separate: Turbo/Nx can express it natively; Nift tracked hooks require a file, while direct `.f` execution can run the check. No Python/Nift adapter scheduler is added to fake that parity.
+
+Nift unchanged-state means tracked file/hash clean checks; Turbo/Nx mean local task-cache hits, with outputs retained. Missing-output restoration is a separate feature probe: Turbo/Nx replay cached outputs; Nift rebuilds. No remote cache, cloud account, framework inference advantage or hidden skip layer. Local cache writes are retained in ordinary dirty runs. Fully dirty means unique changed input bytes for every task, not merely removing outputs that a cache may restore. A separate cache-disabled small execution cohort runs every task.
+
+Nift uses one reusable tracked action hook and explicit file input/consumption sidecars; direct outputless `.f` is separately exercised. Tracked vs procedural authoring is not conflated. Natural runner launch layers remain: Turbo invokes npm scripts, Nx uses run-commands, Nift uses cmd. Their own launch overhead is part of orchestration, not a difference in task body. The C tiny-body track therefore measures orchestration **and native launch layers**, not isolated scheduler CPU.
+
+Sizes: 20/100/1,000 controlled mixed tasks; 100/1,000 independent tiny tasks. A 10,000-task all-dirty track is excluded after feasibility: projecting observed 1,000-task launch costs makes repeated runs disproportionately costly for a diagnostic microbenchmark. This is a declared scope bound, not evidence that any runner cannot handle 10,000 tasks. Tiny 1%, 10%, one-dirty, full and unchanged cases remain.
+
+Worker limits 1/2/4 are verified from task-body event overlap. Memory is Linux wait4 maximum-child RSS, not total simultaneous compiler/Node process-tree memory. Fresh CLI processes, Nx daemon disabled, remote caching/telemetry disabled, retained local state. This is not a claim about default interactive daemon-assisted latency or cold machine boot.
+
+Task-body fixtures are read by the same Python program for mixed work and same C program for tiny work. The mixed body parses the canonical graph per invocation; that common cost is included and limits interpretation of application throughput. No algorithm-language speed claim follows.
+
+Environment input invalidation and version-aware input hashing are documented capability questions, not common measured scenarios: no Nift environment invalidation is inferred merely from getenv. Source/config/binary paths are explicit common file inputs; changing a tool version without changing a declared file is not certified here. Failure/recovery and genuine outputless checks are semantic tests rather than successful timing rankings. Nift's repair lifecycle is retained.

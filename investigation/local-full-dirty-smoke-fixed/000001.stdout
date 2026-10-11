@@ -1,0 +1,24 @@
+rebuild causes:
+  ↳ dependency changed: inputs/asset-00000.json → 1 file
+  ↳ dependency changed: inputs/asset-00001.json → 1 file
+  ↳ dependency changed: inputs/asset-00002.json → 1 file
+  ↳ dependency changed: inputs/asset-00003.json → 1 file
+  ↳ dependency changed: inputs/asset-00004.json → 1 file
+  ↳ dependency changed: inputs/asset-00005.json → 1 file
+  ↳ dependency changed: inputs/asset-00006.json → 1 file
+  ↳ dependency changed: inputs/asset-00007.json → 1 file
+  ↳ dependency changed: inputs/build-helper.json → 1 file
+  ↳ dependency changed: inputs/build-web.json → 1 file
+  ↳ dependency changed: inputs/docs.json → 1 file
+  ↳ dependency changed: inputs/generate-client.json → 1 file
+  ↳ dependency changed: inputs/generate-schema.json → 1 file
+  ↳ dependency changed: inputs/integration-test.json → 1 file
+  ↳ dependency changed: inputs/lint.json → 1 file
+  ↳ dependency changed: inputs/package.json → 1 file
+  ↳ dependency changed: inputs/release-prep.json → 1 file
+  ↳ dependency changed: inputs/typecheck.json → 1 file
+  ↳ dependency changed: inputs/unit-test.json → 1 file
+  ↳ dependency changed: inputs/verify.json → 1 file
+affected files: generate-schema, generate-client, lint, typecheck, unit-test  +15 more
+📦 20 files rebuilt successfully
+time taken: 0.395926 seconds

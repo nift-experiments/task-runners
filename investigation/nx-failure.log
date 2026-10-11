@@ -1,0 +1,78 @@
+
+ NX   Running targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow:
+
+- workflow
+
+
+
+> nx run workflow:generate-schema
+
+> python3 task_body.py generate-schema
+
+generate-schema: injected prerequisite failure
+Warning: command "python3 task_body.py generate-schema" exited with non-zero status code
+> nx run workflow:lint
+
+> python3 task_body.py lint
+
+
+> nx run workflow:build-helper
+
+> python3 task_body.py build-helper
+
+
+> nx run workflow:asset-00000
+
+> python3 task_body.py asset-00000
+
+
+> nx run workflow:asset-00002
+
+> python3 task_body.py asset-00002
+
+
+> nx run workflow:asset-00004
+
+> python3 task_body.py asset-00004
+
+
+> nx run workflow:asset-00006
+
+> python3 task_body.py asset-00006
+
+
+
+  Run duration:      190ms
+  Cache:             Skipped (--skip-nx-cache)
+  Critical path:     131ms (1 task)
+  Recoverable time:  59ms (31% of the run)
+
+ NX   Running targets generate-schema, generate-client, lint, typecheck, unit-test, build-web, build-helper, docs, package, integration-test, verify, release-prep, asset-00000, asset-00001, asset-00002, asset-00003, asset-00004, asset-00005, asset-00006, asset-00007 for project workflow failed
+
+Tasks not run because their dependencies failed or --nx-bail=true:
+
+- workflow:generate-client
+- workflow:typecheck
+- workflow:unit-test
+- workflow:build-web
+- workflow:docs
+- workflow:package
+- workflow:integration-test
+- workflow:verify
+- workflow:release-prep
+- workflow:asset-00001
+- workflow:asset-00003
+- workflow:asset-00005
+- workflow:asset-00007
+
+Failed tasks:
+
+- workflow:generate-schema
+
+
+ NX   Nx detected a flaky task
+
+  workflow:generate-schema
+
+Flaky tasks can disrupt your CI pipeline. Automatically retry them with Nx Cloud. Learn more at https://nx.dev/ci/features/flaky-tasks
+

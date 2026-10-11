@@ -1,0 +1,21 @@
+
+ NX   Running target asset-00000 for project workflow:
+
+- workflow
+
+
+
+> nx run workflow:asset-00000
+
+> python3 task_body.py asset-00000
+
+
+
+
+ NX   Successfully ran target asset-00000 for project workflow
+
+
+  Run duration:      79ms
+  Cache:             Skipped (--skip-nx-cache)
+  Critical path:     73ms (1 task)
+  Recoverable time:  <1ms

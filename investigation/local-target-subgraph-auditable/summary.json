@@ -1,0 +1,95 @@
+{
+  "observations": 6,
+  "measured": 3,
+  "cells": 3,
+  "all_correct": true,
+  "summary": [
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "target-subgraph",
+      "runner": "nift",
+      "samples": 1,
+      "wall_ms": {
+        "median": 322.922602,
+        "min": 322.922602,
+        "max": 322.922602,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 413.154,
+        "min": 413.154,
+        "max": 413.154,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 19532,
+        "min": 19532,
+        "max": 19532,
+        "p95": null
+      },
+      "executed_tasks": 10,
+      "skipped_or_cache_hit": null,
+      "peak_body_concurrency": 2
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "target-subgraph",
+      "runner": "nx",
+      "samples": 1,
+      "wall_ms": {
+        "median": 1342.553954,
+        "min": 1342.553954,
+        "max": 1342.553954,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 2279.64,
+        "min": 2279.64,
+        "max": 2279.64,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 139900,
+        "min": 139900,
+        "max": 139900,
+        "p95": null
+      },
+      "executed_tasks": 10,
+      "skipped_or_cache_hit": null,
+      "peak_body_concurrency": 1
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "target-subgraph",
+      "runner": "turbo",
+      "samples": 1,
+      "wall_ms": {
+        "median": 3510.069237,
+        "min": 3510.069237,
+        "max": 3510.069237,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 5242.157,
+        "min": 5242.157,
+        "max": 5242.157,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 90988,
+        "min": 90988,
+        "max": 90988,
+        "p95": null
+      },
+      "executed_tasks": 10,
+      "skipped_or_cache_hit": null,
+      "peak_body_concurrency": 2
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "observations": 6,
+  "measured": 3,
+  "cells": 3,
+  "all_correct": true,
+  "summary": [
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "full",
+      "runner": "nift",
+      "samples": 1,
+      "wall_ms": {
+        "median": 419.431377,
+        "min": 419.431377,
+        "max": 419.431377,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 1018.684,
+        "min": 1018.684,
+        "max": 1018.684,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 21632,
+        "min": 21632,
+        "max": 21632,
+        "p95": null
+      },
+      "executed_tasks": 20,
+      "skipped_or_cache_hit": 0,
+      "peak_body_concurrency": 2
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "full",
+      "runner": "nx",
+      "samples": 1,
+      "wall_ms": {
+        "median": 1335.161484,
+        "min": 1335.161484,
+        "max": 1335.161484,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 2889.84,
+        "min": 2889.84,
+        "max": 2889.84,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 139872,
+        "min": 139872,
+        "max": 139872,
+        "p95": null
+      },
+      "executed_tasks": 20,
+      "skipped_or_cache_hit": 0,
+      "peak_body_concurrency": 2
+    },
+    {
+      "tiny": false,
+      "size": 20,
+      "jobs": 4,
+      "case": "full",
+      "runner": "turbo",
+      "samples": 1,
+      "wall_ms": {
+        "median": 3651.681976,
+        "min": 3651.681976,
+        "max": 3651.681976,
+        "p95": null
+      },
+      "cpu_ms": {
+        "median": 10243.432,
+        "min": 10243.432,
+        "max": 10243.432,
+        "p95": null
+      },
+      "peak_rss_kib": {
+        "median": 90620,
+        "min": 90620,
+        "max": 90620,
+        "p95": null
+      },
+      "executed_tasks": 20,
+      "skipped_or_cache_hit": 0,
+      "peak_body_concurrency": 3
+    }
+  ]
+}
