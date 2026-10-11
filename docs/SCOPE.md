@@ -1,6 +1,6 @@
 # Accepted scope decision, before official measurement
 
-Primary quantitative cohort: one synthetic single-project task DAG, with identical deterministic task processes. Realistic task classes include JSON/schema/client generation, checks, text/assets, one actual helper compilation/execution, deterministic in-memory packaging and a release manifest. It is controlled project work, not a production framework build or a monorepo/package-selection test.
+Primary quantitative cohort: one synthetic single-project task DAG, with identical deterministic task processes. Task names model workflow roles. Actual bodies parse a 32-record JSON input, assert known properties, hash consumed artifact bytes, transform text, compile/execute one trivial C helper, validate a deterministic in-memory tar and emit content-hashed JSON output records. No actual TypeScript compiler, application test suite, framework build or deployment is measured. It is controlled project work, not a production framework build or a monorepo/package-selection test.
 
 Checks in the common quantitative graph deliberately produce cached success receipts in **all** participants. This is not a benchmark of always-run outputless checks. The genuine outputless mixed-DAG feature probe is separate: Turbo/Nx can express it natively; Nift tracked hooks require a file, while direct `.f` execution can run the check. No Python/Nift adapter scheduler is added to fake that parity.
 

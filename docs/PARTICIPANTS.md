@@ -1,6 +1,6 @@
 # Participant investigation
 
-Proposed primary set: Nift, Turborepo, Nx. Nift supplies procedural `.f` plus tracked artifact scheduling. Turbo supplies package/task pipelines and cache-oriented execution. Nx supplies project/target graphs, explicit inputs/outputs and tooling. Make/Ninja are excluded as primary participants: they have a separate campaign.
+Selected primary set: Nift, Turborepo, Nx. Nift supplies procedural `.f` plus tracked artifact scheduling. Turbo supplies package/task pipelines and cache-oriented execution. Nx supplies project/target graphs, explicit inputs/outputs and tooling. Make/Ninja are excluded as primary participants: they have a separate campaign.
 
 Just is a useful qualitative contrast for authored recipes, but is not assumed to offer equivalent incremental state and bounded parallel DAG execution. Include it quantitatively only if native equivalent contracts can be certified without an adapter scheduler; otherwise keep three primary participants.
 
@@ -13,4 +13,4 @@ Official sources checked 11 October 2026:
 - https://nx.dev/docs/concepts/how-caching-works
 - https://just.systems/man/en/
 
-Nx separates prerequisite ordering from hashed inputs too; that distinction is meaningful, not inherently redundant ceremony. Turbo/Nx restore cached outputs and replay logs. Initial hypotheses must be tested against pinned installations. Versions are not frozen yet.
+Nx separates prerequisite ordering from hashed inputs too; that distinction is meaningful, not inherently redundant ceremony. Turbo/Nx restore cached outputs and replay logs. Initial hypotheses must be tested against pinned installations. Frozen pins: source-built Nift 4.11.0 at 8f90fd49d8b2484c1d732cb440ea442e53e08172, Turbo 2.11.7, Nx 23.3.0, Node 22.22.1 and npm 9.2.0. Just remains qualitative only; no equivalent complete incremental/cache protocol was certified for inclusion.

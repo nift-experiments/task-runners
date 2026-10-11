@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "files_scanned": 14,
+  "checks": [
+    "authorized token bytes absent",
+    "private SSH key markers absent",
+    "temporary connection IP absent"
+  ],
+  "credentials_printed": false
+}

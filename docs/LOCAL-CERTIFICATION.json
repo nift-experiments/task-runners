@@ -29,5 +29,6 @@
     45,
     90
   ],
-  "status": "ready to freeze suite; cloud not provisioned yet"
+  "status": "ready to freeze suite; cloud not provisioned yet",
+  "authored_f_prepared_examples": 4
 }
