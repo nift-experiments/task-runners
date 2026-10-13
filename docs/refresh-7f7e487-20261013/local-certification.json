@@ -1,0 +1,31 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "candidate_binary_sha256": "f13f0b5c99afa3c4afa320d33cad88f0819d3fad384dc3a6d51364d79206e11e",
+  "scope": "isolated local semantic certification, no official observations",
+  "semantic_probe_records": 21,
+  "semantic_probe_passed": true,
+  "feature_probe_records": 9,
+  "environment_probe_records": 6,
+  "full_matrix_smoke": "running; audit acceptance pending",
+  "commands": [
+    "NIFT=/tmp/nift-refresh-candidate-7f7e487/nift TASK_RUNNER_PROBE_OUTPUT=/tmp/graph-refresh-cert-7f7e487/receipts/task-initial-probe.json python3 scripts/probe.py",
+    "NIFT=/tmp/nift-refresh-candidate-7f7e487/nift python3 scripts/feature_probes.py",
+    "NIFT=/tmp/nift-refresh-candidate-7f7e487/nift python3 scripts/environment_probe.py"
+  ],
+  "raw_receipts_directory": "/tmp/graph-refresh-cert-7f7e487",
+  "capabilities": {
+    "outputless_tracked_nodes": "ordinary tracked hook still must emit tracked output; direct .f outputless check works",
+    "environment_invalidation": "runtime getenv does not declare invalidation; changing A\u2192B leaves tracked artifact unchanged; source tracked/schema offers no environment declaration",
+    "task_result_cache": "missing output rebuilds; peers restore without task execution; no result-restoration cache surface found in candidate",
+    "ensure_target": "--ensure explicitly rejected; historical named target forces action",
+    "worker_override": "-j explicitly rejected; configured build-threads=1/2/4 remains supported and certified",
+    "graph_query": "info --names and status work; build -p gives reasons; not a complete structured task-graph query",
+    "recovery": "--repair full DAG recovery after injected failure passes"
+  },
+  "source_review": [
+    "src/CLI.cpp:2163 build options",
+    "src/ProjectRead.cpp:251 tracked-entry schema",
+    "src/ParserExpression.cpp:2493 build_names automation surface"
+  ],
+  "historical_capability_probe_limitation": "legacy forms tested in isolated temporary copy; current candidate source inspected separately; no newer supported outputless/env/cache/ensure/-j task API found"
+}

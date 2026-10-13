@@ -4,15 +4,16 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'generators'));sys.path.insert(0,str(ROOT/'scripts'))
 from workflow import generate
 from oracle import certify
+NIFT_BINARY=os.environ.get('NIFT',str(ROOT/'work/nift-source/nift'))
 ENV=dict(os.environ,NX_DAEMON='false',NX_NO_CLOUD='true',TURBO_TELEMETRY_DISABLED='1',DO_NOT_TRACK='1',NX_TASKS_RUNNER_DYNAMIC_OUTPUT='false')
 def command(runner,g,jobs=4,target=None,force=False):
  names=target or [t['id'] for t in g['tasks']]
- if runner=='nift':return [str(ROOT/'work/nift-source/nift'),'build',*(['--all'] if force else names if target else [])]
+ if runner=='nift':return [NIFT_BINARY,'build',*(['--all'] if force else names if target else [])]
  if runner=='turbo':return [str(ROOT/'work/tools/node_modules/.bin/turbo'),'run',*names,f'--concurrency={jobs}','--cache=local:' if force else '--cache=local:rw','--continue=dependencies-successful','--output-logs=errors-only']
  return [str(ROOT/'work/tools/node_modules/.bin/nx'),'run-many','--projects=workflow','--targets='+','.join(names),f'--parallel={jobs}','--outputStyle=static',*(['--skip-nx-cache'] if force else [])]
 def invoke(r,runner,g,label,expected,jobs=4,target=None,force=False,failed=None):
  (r/'trace.jsonl').unlink(missing_ok=True);start=time.monotonic();args=command(runner,g,jobs,target,force)
- if label=='recovery' and runner=='nift':args=[str(ROOT/'work/nift-source/nift'),'build','--repair']
+ if label=='recovery' and runner=='nift':args=[NIFT_BINARY,'build','--repair']
  p=subprocess.run(args,cwd=r,env=ENV,capture_output=True,text=True,timeout=1800);wall=time.monotonic()-start
  (r/(label+'.log')).write_text(p.stdout+p.stderr);print(runner,label,p.returncode,round(wall,3),flush=True)
  if p.returncode and not failed:raise RuntimeError((p.stdout+p.stderr)[-3500:])
@@ -38,5 +39,6 @@ def main():
   results.append(invoke(r,runner,g,'failure',permitted,force=True,failed='generate-schema'))
   (r/'fail-task').unlink()
   results.append(invoke(r,runner,g,'recovery',names,force=True))
- (ROOT/'investigation/initial-probe.json').write_text(json.dumps(results,indent=2)+'\n')
+ destination=Path(os.environ.get('TASK_RUNNER_PROBE_OUTPUT',str(ROOT/'investigation/initial-probe.json')));destination.parent.mkdir(parents=True,exist_ok=True)
+ destination.write_text(json.dumps(results,indent=2)+'\n')
 if __name__=='__main__':main()

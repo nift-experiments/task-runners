@@ -1,0 +1,14 @@
+{
+  "candidate_sha": "7f7e487c47a87e871dfef53345e2b71288008bff",
+  "branch": "main",
+  "series": "20261013-candidate-7f7e487",
+  "plan_sha256": "e3b10edf2ed2636a9035cc919027101e70edc5509d76185fa70ac577ecaa04ed",
+  "runner_cells": 93,
+  "measured": 1434,
+  "warmups": 93,
+  "observations": 1527,
+  "baseline_suite_sha": "b3db302064e2baef1a40ca5ad6f62639c6215fe9",
+  "refresh_suite_sha": "freeze after additive refresh changes are committed",
+  "correctness_gate": "21 baseline semantic records +9 feature +6 environment records passed; full matrix local smoke audit pending",
+  "comparator_policy": "retain previous exact participant versions; record actual host compiler/packages and disclose cross-node trends"
+}
